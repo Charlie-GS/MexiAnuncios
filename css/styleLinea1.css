@@ -1,0 +1,288 @@
+
+  /* Estilos del contenedor principal */
+  .container-ojo-agua {
+    width: 200px;
+    position: relative;
+    margin-left: 260px;
+    margin-top: 23px;
+  }
+
+  .container-esmeralda {
+    width: 200px;
+    position: relative;
+    margin-left: 180px;
+    margin-top: 20px;
+  }
+
+  .container-cuautemocN {
+    width: 200px;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 25px;
+  }
+
+  .container-cuautemocS {
+    width: 200px;
+    position: relative;
+    margin-left: 180px;
+    margin-top: 25px;
+  }
+
+  .container-hidalgo {
+    width: 200px;
+    position: relative;
+    margin-left: 180px;
+    margin-top: 30px;
+  }
+
+  .container-insurgentes {
+    width: 200px;
+    position: relative;
+    margin-left: 180px;
+    margin-top: 50px;
+  }
+
+  .container-abastos {
+    width: 200px;
+    position: relative;
+    margin-left: 125px;
+    margin-top: 10px;
+  }
+
+  .container-septiembre {
+    width: 200px;
+    position: relative;
+    margin-left: 125px;
+    margin-top: 20px;
+  }
+
+  .container-palomas {
+    width: 200px;
+    position: relative;
+    margin-left: 85px;
+    margin-top: -10px;
+  }
+
+  .container-jardines {
+    width: 40px;
+    position: relative;
+    margin-left: 5px;
+    margin-top: -6px;
+  }
+
+  .container-hospital {
+    width: 200px;
+    position: relative;
+    margin-left: -90px;
+    margin-top: 15px;
+  }
+
+  .container-1mayo {
+    width: 200px;
+    position: relative;
+    margin-left: -100px;
+    margin-top: 0px;
+  }
+
+  .container-americas {
+    width: 200px;
+    position: relative;
+    margin-left: -65px;
+    margin-top: 30px;
+  }
+
+  .container-valleEca {
+    width: 200px;
+    position: relative;
+    margin-left: -65px;
+    margin-top: 10px;
+  }
+
+  .container-voca3 {
+    width: 200px;
+    position: relative;
+    margin-left: -8px;
+    margin-top: -7px;
+  }
+
+  .container-adolfo {
+    width: 50px;
+    position: relative;
+    margin-left: 30px;
+    margin-top: -13px;
+  }
+
+  .container-zodiaco {
+    width: 50px;
+    position: relative;
+    margin-left: 75px;
+    margin-top: -10px;
+  }
+
+  .container-atorres {
+    width: 200px;
+    position: relative;
+    margin-left: 75px;
+    margin-top: -1px;
+  }
+
+  .container-unitec {
+    width: 200px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+
+  .container-industrial {
+    width: 200px;
+    position: relative;
+    margin-left: 80px;
+    margin-top: 0px;
+  }
+
+  .container-josefa {
+    width: 200px;
+    position: relative;
+    margin-left: 80px;
+    margin-top: 0px;
+  }
+
+  .container-quintosol {
+    width: 200px;
+    position: relative;
+    margin-left: 80px;
+    margin-top: 0px;
+  }
+
+  .container-cazteca {
+    width: 200px;
+    position: relative;
+    margin-left: 60px;
+    margin-top: 3px;
+  }
+
+  .area-hover {
+    width: 30px;
+    height: 30px;
+    background-color: #ff0000 !important;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+  }
+
+  .tarjeta {
+    width: 300px;
+    height: 200px;
+    background-color: #008314;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+    display: none;
+  }
+
+  .area-hover:hover .tarjeta {
+    transform: translateX(0);
+    display: block;
+  }
+
+  .contenido {
+    padding: 20px;
+    color: white;
+  }
+
+  .titulo {
+    margin-top: 0;
+  }
+
+  .modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.5);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+  }
+
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modalDialog>div {
+    width: 1000px;
+    height: 700px;
+    position: relative;
+    margin: 40px auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #eaeaea;
+    transition: opacity 400ms ease-in;
+  }
+
+  .close {
+    background: #ff0000;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+  }
+
+  .close:hover {
+    background: #8d0000;
+  }
+
+  #modal-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px black solid;
+    height: 500px;
+    width: 1000px;
+  }
+
+  #btnClose-ojoagua {
+    border: #000 0px solid;
+    border-radius: 100px;
+    width: 30px;
+  }
+
+  #btnClose-esme {
+    border: #000 0px solid;
+    border-radius: 100px;
+    width: 30px;
+  }
+
+  #tabla-modal {
+    height: 200px;
+    width: 620px;
+    right: 100%;
+    position: absolute;
+    right: 10px;
+    margin-top: 20px;
+  }
+
+  td {
+    border-bottom: #000 2px solid;
+  }
